@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Sketch2Anim: Towards Transferring Sketch Storyboards into 3D Animation">
+  <meta name="keywords" content="Sketch2Anim">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>Sketch2Anim</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -32,7 +30,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -50,36 +48,6 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </nav>
 
 
@@ -88,68 +56,46 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-2 publication-title">Sketch2Anim: Towards Transferring Sketch Storyboards into 3D Animation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://zhongleilz.github.io/">Lei Zhong</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://ericguo5513.github.io/">Chuan Guo</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://ymingxie.github.io/">Yiming Xie</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://jiawei22.github.io/">Jiawei Wang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://enigma-li.github.io/">Changjian Li</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>University of Edinburgh,</span>
+            <span class="author-block"><sup>2</sup>Snap Research,</span>
+            <span class="author-block"><sup>3</sup>Northeastern University</span>
+          </div>
+          <div style="font-size: 1.5em; margin-top: 10px; font-weight: bold; text-align: center;">
+            SIGGRAPH 2025 (TOG)
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/pdf/2407.12783"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
+                  <span>paper</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/neu-vi/SMooDi"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -157,15 +103,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
           </div>
@@ -175,75 +112,19 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
+<section class="hero is-light is-small" style="background-color: white;">
+  <div class="hero-body" style="background-color: white;">
+    <!-- <section class="hero teaser"> -->
+    <div class="container is-max-desktop" style="background-color: white;">
+      <div class="hero-body" style="background-color: white;">
+        <img src="./static/images/teaser.gif" alt="teaser" style="width: 100%; background-color: white;">
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">Sketch2Anim</span> can transfer sketch storyboards into 3D animation.
+        </h2>
+        <!-- <h5 class="has-text-centered">
+          Style labels are not used as model input and shown here for visualization purpose.
+        </h5> -->
       </div>
     </div>
   </div>
@@ -258,31 +139,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+          <!-- Storyboarding is widely used for creating 3D animations. Animators use the 2D sketches in storyboards as references to craft the desired 3D animations through a trial-and-error process.
+          The traditional approach requires exceptional expertise and is both labor-intensive and time-consuming. Consequently, there is a high demand for automated methods that can directly translate 2D storyboard sketches into 3D animations.
+          This task is under-explored to date and inspired by the significant advancements of motion diffusion models, we propose to address it from the perspective of conditional motion synthesis.
+          We thus present Sketch2Anim, composed of two key modules for sketch constraint understanding and motion generation. Specifically, due to the large domain gap between the 2D sketch and 3D motion, instead of directly conditioning on 2D inputs, we design a 3D conditional motion generator that simultaneously leverages 3D keyposes, joint trajectories, and action words, to achieve precise and fine-grained motion control.
+          Then, we invent a neural mapper dedicated to aligning user-provided 2D sketches with their corresponding 3D keyposes and trajectories in a shared embedding space, enabling, for the first time, direct 2D control of motion generation. Our approach successfully transfers storyboards into high-quality 3D motions and inherently supports direct 3D animation editing, thanks to the flexibility of our multi-conditional motion generator.
+          Comprehensive experiments and evaluations, and a user study demonstrate the effectiveness of our approach. -->
+          Storyboarding is a common practice in 3D animation, where animators use 2D sketches as references to manually create motions—a process that is both time-consuming and requires significant expertise. To automate this workflow, we introduce Sketch2Anim, a novel framework that translates 2D storyboard sketches into 3D animations through conditional motion synthesis.
+          Sketch2Anim features a multi-conditional motion generator, leveraging 3D keyposes, joint trajectories, and action words for precise motion control. To bridge the 2D-3D domain gap, we also propose a neural mapper that aligns 2D sketches with 3D motion constraints in a shared embedding space, enabling direct 2D-to-3D animation control.
+          Our method produces high-quality 3D motions and naturally supports interactive editing. Extensive experiments and user studies confirm the effectiveness of our approach.
           </p>
         </div>
       </div>
@@ -292,193 +157,281 @@
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <div class="column">
+            <img src="./static/images/overview.png" style="max-width: 102%; height: auto;" />
+          </div>
+          <p>
+            <!-- Our model generates human motions from the text prompt and spatial control signal.
+            At the denoising diffusion step, the model takes the text prompt and a noised motion sequence as input and estimates the clean motion.
+            To incorporate flexible spatial control signals into the generation process, a hybrid guidance, consisting of realism and spatial guidance, is used to encourage motions to conform to the control signals while being realistic. -->
+            Our pipeline consists of two core modules - the multi-conditional motion generator and the 2D-3D neural mapper. 
+            Instead of directly lifting the 2D keypose and trajectory into their 3D counterparts, we train a neural mapper dedicated to aligning the two domains in the embedding space. 
+            Because of this shared embedding, it enables the employment of more informative and precise 3D keyposes and trajectories as the motion conditions in the motion generator, 
+            while exploiting the 2D keypose and trajectory detected from the sketch storyboard at inference time.
+          </p>
+
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
+
   </div>
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-
+<section class="hero is-light is-small" style="background-color: white;">
+  <div class="container is-max-desktop" style="background-color: white;">
+    <br>
+    <br>
+    <div class="columns is-centered has-text-centered" style="background-color: white;">
+      <h2 class="title is-3"> Traditional Animation Work</h2>
+    </div>
+    <br>  <!-- 增加一行空白 -->
+    <div class="content has-text-justified">
+      <!-- <p>
+        <b>Text prompt</b>: A person walks forward and then sits down. 
+      </p> -->
+    </div>
     <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
+      <h2 class="subtitle is-5">Animators first envision key poses to represent the intended motion. These key poses are imported into Blender as visual references, 
+        where predefined 3D joints are manually adjusted to match them and align with the desired trajectory and action description.
+      </h2>
+      <h2 class="subtitle is-5">.</h2>
+    </div>
+    <div class="columns is-centered">
+      <!-- Full model. -->
       <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <!-- <h2 class="title is-4">Full model</h2> -->
         <div class="columns is-centered">
           <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
+            <video id="full" autoplay controls muted loop playsinline style="width: 250%; height: auto; max-height: 70vh; background-color: white;">
+              <source src="./static/videos/traditional_animation_work.mp4" type="video/mp4">
             </video>
           </div>
-
         </div>
       </div>
+      <!--/ Full model. -->
     </div>
-    <!--/ Matting. -->
+    <br>
+  </div>
+</section>
 
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
 
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
+<section class="hero is-light is-small" style="background-color: white;">
+  <div class="container is-max-desktop" style="background-color: white;">
+    <br><br>
+
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Gallery Results</h2>
+    </div>
+
+    <!-- 按钮 + 滚动容器 -->
+    <div style="position: relative;">
+
+      <!-- 左箭头按钮 -->
+      <button onclick="scrollGallery(-1)" style="position: absolute; top: 40%; left: -2rem; z-index: 1; background: none; border: none; font-size: 2rem; cursor: pointer;">&#10094;</button>
+
+      <!-- 滚动视频容器 -->
+      <div id="videoGallery" style="overflow-x: auto; display: flex; scroll-snap-type: x mandatory; gap: 2rem; scroll-behavior: smooth; padding: 1rem 0;">
+        
+        <!-- 视频 1 -->
+        <div style="flex: 0 0 100%; scroll-snap-align: center;">
+          <video autoplay controls muted loop playsinline style="width: 100%; height: auto; max-height: 70vh; background-color: white;">
+            <source src="./static/videos/gallery_results_1.mp4" type="video/mp4">
           </video>
         </div>
-        <!--/ Re-rendering. -->
+
+        <!-- 视频 2 -->
+        <div style="flex: 0 0 100%; scroll-snap-align: center;">
+          <video autoplay controls muted loop playsinline style="width: 100%; height: auto; max-height: 70vh; background-color: white;">
+            <source src="./static/videos/gallery_results_2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- 视频 3 -->
+        <div style="flex: 0 0 100%; scroll-snap-align: center;">
+          <video autoplay controls muted loop playsinline style="width: 100%; height: auto; max-height: 70vh; background-color: white;">
+            <source src="./static/videos/gallery_results_3.mp4" type="video/mp4">
+          </video>
+        </div>
 
       </div>
+
+      <!-- 右箭头按钮 -->
+      <button onclick="scrollGallery(1)" style="position: absolute; top: 40%; right: -2rem; z-index: 1; background: none; border: none; font-size: 2rem; cursor: pointer;">&#10095;</button>
     </div>
-    <!--/ Animation. -->
+
+    <br>
+  </div>
+</section>
+
+<!-- 控制滚动的脚本 -->
+<script>
+  function scrollGallery(direction) {
+    const container = document.getElementById('videoGallery');
+    const scrollAmount = container.offsetWidth; // 滚动一个视频宽度
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
 
 
-    <!-- Concurrent Work. -->
+<section class="hero is-light is-small" style="background-color: white;">
+  <div class="container is-max-desktop" style="background-color: white;">
+    <br><br>
+
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3">Comparing to Other Baseline Methods</h2>
+    </div>
+
+    <br>  <!-- 增加一行空白 -->
+
+    <h2 class="subtitle is-5">
+      Since no existing method directly addresses our conditional motion generation task, we developed three baseline approaches for comparison:
+    </h2>
+    <ul style="font-size: 1rem; line-height: 1.8; padding-left: 1.2rem; list-style-type: decimal;">
+      <li>
+        <b>Motion Retrieval:</b> We adapt the recent state-of-the-art method TMR, which retrieves the closest motion clip based on text input. We extend it to additionally support 2D keyposes and joint trajectories.
+      </li>
+      <li>
+        <b>Lift-and-Control:</b> We leverage an additional network to lift 2D keyposes and trajectories into 3D representations for conditional motion generation.
+      </li>
+      <li>
+        <b>Direct 2D-to-Motion:</b> We train a multi-conditional motion diffusion model directly on 2D keyposes, joint trajectories, and action.
+      </li>
+    </ul>
+    
+
+    <!-- 按钮 + 滚动容器 -->
+    <div style="position: relative;">
+
+      <!-- 左箭头按钮 -->
+      <button onclick="scrollGallery2(-1)" style="position: absolute; top: 40%; left: -2rem; z-index: 1; background: none; border: none; font-size: 2rem; cursor: pointer;">&#10094;</button>
+
+      <!-- 滚动视频容器 -->
+      <div id="videoGallery2" style="overflow-x: auto; display: flex; scroll-snap-type: x mandatory; gap: 2rem; scroll-behavior: smooth; padding: 1rem 0;">
+        
+        <!-- 视频 1 -->
+        <div style="flex: 0 0 100%; scroll-snap-align: center;">
+          <video autoplay controls muted loop playsinline style="width: 100%; height: auto; max-height: 70vh; background-color: white;">
+            <source src="./static/videos/comparison_1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- 视频 2 -->
+        <div style="flex: 0 0 100%; scroll-snap-align: center;">
+          <video autoplay controls muted loop playsinline style="width: 100%; height: auto; max-height: 70vh; background-color: white;">
+            <source src="./static/videos/comparison_2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- 视频 3 -->
+        <div style="flex: 0 0 100%; scroll-snap-align: center;">
+          <video autoplay controls muted loop playsinline style="width: 100%; height: auto; max-height: 70vh; background-color: white;">
+            <source src="./static/videos/comparison_3.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+
+      <!-- 右箭头按钮 -->
+      <button onclick="scrollGallery2(1)" style="position: absolute; top: 40%; right: -2rem; z-index: 1; background: none; border: none; font-size: 2rem; cursor: pointer;">&#10095;</button>
+    </div>
+
+    <br>
+  </div>
+</section>
+
+<!-- 控制滚动的脚本 -->
+<script>
+  function scrollGallery2(direction) {
+    const container = document.getElementById('videoGallery2');
+    const scrollAmount = container.offsetWidth; // 滚动一个视频宽度
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
+
+
+<section class="hero is-light is-small" style="background-color: white;">
+  <div class="container is-max-desktop" style="background-color: white;">
+    <br>
+    <br>
+    <div class="columns is-centered has-text-centered" style="background-color: white;">
+      <h2 class="title is-3"> Real-world Storyboard</h2>
+    </div>
+    <div class="content has-text-justified">
+      <!-- <p>
+        <b>Text prompt</b>: A person walks forward and then sits down. 
+      </p> -->
+    </div>
     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+      <!-- Full model. -->
+      <div class="column">
+        <!-- <h2 class="title is-4">Full model</h2> -->
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="full" autoplay controls muted loop playsinline style="width: 250%; height: auto; max-height: 70vh; background-color: white;">
+              <source src="./static/videos/real_world_storyboard.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
+      <!--/ Full model. -->
     </div>
-    <!--/ Concurrent Work. -->
-
+    <br>
   </div>
 </section>
 
 
-<section class="section" id="BibTeX">
+
+
+
+<!--Concurrent Works-->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered" style="background-color: white;">
+        <h2 class="title is-3">Concurrent Works</h2>
+      </div>
+      <!-- <h2 class="title is-3">Concurrent Stylized Motion Works</h2> -->
+        <li><a href="https://arxiv.org/abs/2503.04829/">(CVPR 2025) StickMotion: Generating 3D Human Motions by Drawing a Stickman</a> </li>
+        <li><a href="https://ieeexplore.ieee.org/document/10812894/">(TVCG 2025) Doodle Your Motion: Sketch-Guided Human Motion Generation
+        </a></li>
+    </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
+    <pre><code>
+      @inproceedings{zhong2024smoodi,
+          title={SMooDi: Stylized Motion Diffusion Model},
+          author={Zhong, Lei and Xie, Yiming and Jampani, Varun and Sun, Deqing and Jiang, Huaizu},
+          booktitle={ECCV},
+          year={2024}
+      }
+    </code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Thanks to <a href="https://keunhong.com/">Keunhong Park</a> for the <a href="https://nerfies.github.io/">website template</a>.
           </p>
         </div>
       </div>
