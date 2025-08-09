@@ -404,6 +404,41 @@
   </div>
 </section>
 
+<!-- Random Joke Generator -->
+<section class="section" id="joke-generator">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <h2 class="title is-3">Random Joke Generator</h2>
+        <p class="subtitle is-5">Take a break and enjoy a random joke!</p>
+        
+        <div class="box" id="joke-container">
+          <div id="joke-content">
+            <p class="is-size-5 has-text-weight-medium" id="joke-setup">Click the button below to get a random joke!</p>
+            <p class="is-size-4 has-text-weight-bold mt-3" id="joke-punchline" style="display: none;"></p>
+          </div>
+          
+          <div id="loading-spinner" style="display: none;">
+            <div class="is-loading" style="height: 50px; width: 50px; margin: 20px auto;"></div>
+            <p>Loading joke...</p>
+          </div>
+          
+          <div id="error-message" class="notification is-danger" style="display: none;">
+            <p><strong>Oops!</strong> Failed to fetch a joke. Please check your internet connection and try again.</p>
+          </div>
+        </div>
+        
+        <button class="button is-primary is-large" id="new-joke-btn" onclick="fetchRandomJoke()">
+          <span class="icon">
+            <i class="fas fa-laugh"></i>
+          </span>
+          <span>Get New Joke</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!--Future Works-->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">

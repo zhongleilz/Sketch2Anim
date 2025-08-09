@@ -155,3 +155,52 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* Joke Generator Styles */
+#joke-generator .box {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#joke-content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#joke-punchline {
+  color: #3273dc;
+  font-style: italic;
+}
+
+.is-loading-custom {
+  position: relative;
+}
+
+.is-loading-custom::after {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1em;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes spinAround {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
